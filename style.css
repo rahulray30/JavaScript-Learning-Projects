@@ -1,0 +1,45 @@
+.container {
+  border: 2px solid black;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  color: rgb(230, 116, 9);
+}
+
+.flex-box-div {
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid black;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.flex-box-div img:hover {
+  box-shadow: 10px 10px 40px rgb(19, 197, 108);
+}
+
+#h2id {
+  color: rgb(241, 219, 16);
+  text-align: center;
+  padding: 40px;
+  font-size: 40px;
+}
+#botImgId:hover {
+  box-shadow: 10px 10px 40px rgba(231, 17, 9, 0.452);
+}
+
+#playAgain{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    background-color: limegreen;
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 10px;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    border-width: 4px;
+   
+
+}

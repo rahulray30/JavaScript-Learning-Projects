@@ -71,22 +71,23 @@ function abc(userinput) {
   }
 
   let resultPara = document.createElement("h2");
-  resultPara.id = "h2id";
   resultPara.innerHTML = resultTextValue;
+  if (resultTextValue == "You won!") {
+    resultPara.id = "h2wonId";
+  } else if (resultTextValue == "You lost!") {
+    resultPara.id = "h2lostId";
+  } else resultPara.id = "h2tieId";
   imageDiv.insertBefore(resultPara, imageDiv.firstChild.nextSibling);
-  
 
   var br = document.createElement("br");
   bodyId.appendChild(br);
-
 
   let reloadBtn = document.createElement("button");
   reloadBtn.id = "playAgain";
   reloadBtn.innerHTML = "Play Again";
   bodyId.appendChild(reloadBtn);
 
-  reloadBtn.onclick = function(){
-      location.reload();
-  }
-
+  reloadBtn.onclick = function () {
+    location.reload();
+  };
 }
